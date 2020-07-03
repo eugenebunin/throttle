@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace Flexbe\Throttle;
 
-use Flexbe\Exceptions\LimitReachedException;
+use Flexbe\Throttle\Exceptions\LimitReachedException;
 
 /**
  * Interface ThrottleInterface
@@ -11,9 +11,9 @@ use Flexbe\Exceptions\LimitReachedException;
  */
 interface ThrottleInterface
 {
-    const ERROR_LIMIT_REACHED = 'Limit reached';
+    const ERROR_LIMIT_REACHED = 'Attempts limit reached';
+
     /**
-     *
      * @param Request $request
      * @throws LimitReachedException
      */
