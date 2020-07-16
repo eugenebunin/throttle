@@ -8,8 +8,6 @@ namespace Flexbe\Throttle;
  */
 interface Config
 {
-    const DEFAULT_TTL = 3360;
-    const DEFAULT_ATTEMPTS = 5;
 
     /**
      * Time To Live in seconds
