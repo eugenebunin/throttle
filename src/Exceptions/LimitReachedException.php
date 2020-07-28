@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace eugenebunin\Throttle\Exceptions;
+namespace EugeneBunin\Throttle\Exceptions;
 
 use Exception;
 
 /**
  * Class LimitReachedException
- * @package eugenebunin\Throttle\Exceptions
+ * @package EugeneBunin\Throttle\Exceptions
  */
 class LimitReachedException extends Exception
 {

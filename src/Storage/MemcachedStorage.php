@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace eugenebunin\Throttle\Storage;
+namespace EugeneBunin\Throttle\Storage;
 
 use Memcached;
 
 /**
  * Class Memcached
- * @package eugenebunin\Throttle\Storage
+ * @package EugeneBunin\Throttle\Storage
  */
 class MemcachedStorage implements Storage
 {

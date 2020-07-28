@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace Tests\Mock;
 
-use eugenebunin\Throttle\Request as RequestAlias;
+use EugeneBunin\Throttle\Request as RequestAlias;
 
 /**
  * Class Request
@@ -18,7 +18,7 @@ class Request implements RequestAlias
         $this->token = $token;
     }
 
-    public function token(): string
+    public function subject(): string
     {
         return $this->token;
     }

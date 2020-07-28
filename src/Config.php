@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace eugenebunin\Throttle;
+namespace EugeneBunin\Throttle;
 
 /**
  * Interface Config

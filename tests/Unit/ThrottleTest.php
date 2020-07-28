@@ -1,10 +1,10 @@
 <?php
 
-use eugenebunin\Throttle\Exceptions\LimitReachedException;
+use EugeneBunin\Throttle\Exceptions\LimitReachedException;
 use PHPUnit\Framework\TestCase;
 use Tests\Mock\Storage;
 use Tests\Mock\Config;
-use eugenebunin\Throttle\Throttle;
+use EugeneBunin\Throttle\Throttle;
 use Tests\Mock\Request;
 
 class ThrottleTest extends TestCase
@@ -36,6 +36,6 @@ class ThrottleTest extends TestCase
         $this->throttle->attempt($request);
         $this->throttle->attempt($request);
         $this->throttle->attempt($request);
-        $this->assertEquals(3, Storage::$cache[$request->token()]);
+        $this->assertEquals(3, Storage::$cache[$request->subject()]);
     }
 }

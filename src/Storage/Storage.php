@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace eugenebunin\Throttle\Storage;
+namespace EugeneBunin\Throttle\Storage;
 
 /**
  * Interface Storage
- * @package eugenebunin\Throttle\Storage
+ * @package EugeneBunin\Throttle\Storage
  */
 interface Storage
 {

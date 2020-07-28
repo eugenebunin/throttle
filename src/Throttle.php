@@ -1,14 +1,14 @@
 <?php
 declare(strict_types=1);
 
-namespace eugenebunin\Throttle;
+namespace EugeneBunin\Throttle;
 
-use eugenebunin\Throttle\Exceptions\LimitReachedException;
-use eugenebunin\Throttle\Storage\Storage;
+use EugeneBunin\Throttle\Exceptions\LimitReachedException;
+use EugeneBunin\Throttle\Storage\Storage;
 
 /**
  * Class Throttle
- * @package eugenebunin\Throttle
+ * @package EugeneBunin\Throttle
  */
 class Throttle implements ThrottleInterface
 {
@@ -35,15 +35,15 @@ class Throttle implements ThrottleInterface
      */
     public function attempt(Request $request): void
     {
-        if (!$this->storage->has($request->token())) {
-            $this->storage->set($request->token(), '1');
+        if (!$this->storage->has($request->subject())) {
+            $this->storage->set($request->subject(), '1');
         } else {
-            $attempts = (int)$this->storage->get($request->token());
+            $attempts = (int)$this->storage->get($request->subject());
             if ($attempts > $this->maxAttempts()) {
                 throw new LimitReachedException(sprintf(self::ERROR_LIMIT_REACHED . ': %s', $this->maxAttempts()));
             } else {
                 $attempts++;
-                $this->storage->set($request->token(), (string)$attempts);
+                $this->storage->set($request->subject(), (string)$attempts);
             }
         }
     }

@@ -1,5 +1,5 @@
 {
-    "name": "eugenebunin/throttle",
+    "name": "EugeneBunin/throttle",
     "authors": [
         {
             "name": "Eugene B",
@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "eugenebunin\\Throttle\\": "src/",
+            "EugeneBunin\\Throttle\\": "src/",
             "Tests\\": "tests/"
         }
     }
