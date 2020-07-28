@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Flexbe\Throttle\Storage;
+namespace eugenebunin\Throttle\Storage;
 
 use Memcached;
 
 /**
  * Class Memcached
- * @package Flexbe\Throttle\Storage
+ * @package eugenebunin\Throttle\Storage
  */
 class MemcachedStorage implements Storage
 {

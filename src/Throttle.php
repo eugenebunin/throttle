@@ -1,14 +1,14 @@
 <?php
 declare(strict_types=1);
 
-namespace Flexbe\Throttle;
+namespace eugenebunin\Throttle;
 
-use Flexbe\Throttle\Exceptions\LimitReachedException;
-use Flexbe\Throttle\Storage\Storage;
+use eugenebunin\Throttle\Exceptions\LimitReachedException;
+use eugenebunin\Throttle\Storage\Storage;
 
 /**
  * Class Throttle
- * @package Flexbe\Throttle
+ * @package eugenebunin\Throttle
  */
 class Throttle implements ThrottleInterface
 {

@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace Flexbe\Throttle;
+namespace eugenebunin\Throttle;
 
 /**
  * Interface Request
- * @package Flexbe\Throttle
+ * @package eugenebunin\Throttle
  */
 interface Request
 {

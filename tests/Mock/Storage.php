@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace Tests\Mock;
 
-use Flexbe\Throttle\Storage\Storage as StorageInterface;
+use eugenebunin\Throttle\Storage\Storage as StorageInterface;
 use Exception;
 
 /**

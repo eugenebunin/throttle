@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace Tests\Mock;
 
-use Flexbe\Throttle\Request as RequestAlias;
+use eugenebunin\Throttle\Request as RequestAlias;
 
 /**
  * Class Request

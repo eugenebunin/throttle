@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace Flexbe\Throttle;
+namespace eugenebunin\Throttle;
 
-use Flexbe\Throttle\Storage\Storage;
+use eugenebunin\Throttle\Storage\Storage;
 
 /**
  * Class Manager
- * @package Flexbe\Throttle
+ * @package eugenebunin\Throttle
  */
 class Manager implements Factory
 {

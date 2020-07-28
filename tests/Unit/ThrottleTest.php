@@ -1,10 +1,10 @@
 <?php
 
-use Flexbe\Throttle\Exceptions\LimitReachedException;
+use eugenebunin\Throttle\Exceptions\LimitReachedException;
 use PHPUnit\Framework\TestCase;
 use Tests\Mock\Storage;
 use Tests\Mock\Config;
-use Flexbe\Throttle\Throttle;
+use eugenebunin\Throttle\Throttle;
 use Tests\Mock\Request;
 
 class ThrottleTest extends TestCase

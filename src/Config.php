@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Flexbe\Throttle;
+namespace eugenebunin\Throttle;
 
 /**
  * Interface Config

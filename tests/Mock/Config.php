@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace Tests\Mock;
 
-use Flexbe\Throttle\Config as ConfigInterface;
+use eugenebunin\Throttle\Config as ConfigInterface;
 
 class Config implements ConfigInterface
 {
